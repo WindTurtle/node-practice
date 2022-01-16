@@ -1,7 +1,13 @@
-const http = require("http");
+const express = require("express");
 
-const routes = require("./routes");
+const bodyParser = require("body-parser");
 
-const server = http.createServer(routes);
+const adminRoutes = require("./routes/admin");
 
-server.listen(4000);
+const app = express();
+
+app.use(adminRoutes);
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.listen(3000);

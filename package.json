@@ -17,8 +17,11 @@
     "url": "https://github.com/WindTurtle/node-practice/issues"
   },
   "homepage": "https://github.com/WindTurtle/node-practice#readme",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.15"
   }
 }
